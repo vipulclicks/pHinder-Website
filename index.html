@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pHinder — pH made simple</title>
+  <meta name="description" content="pHinder turns your iPhone into a smart pH companion. Test water, soil, pools, food, skincare, and more — track results, spot trends, and understand your readings at a glance.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="pHinder — pH made simple">
+  <meta property="og:description" content="pHinder turns your iPhone into a smart pH companion.">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar__container">
+      <a href="#" class="navbar__logo">
+
+        pH<span>inder</span>
+      </a>
+      
+      <div class="navbar__links">
+        <a href="#overview" class="navbar__link">Overview</a>
+
+        <a href="#gallery" class="navbar__link">Gallery</a>
+        <a href="#how-it-works" class="navbar__link">How It Works</a>
+
+      </div>
+      
+      <div class="navbar__actions">
+        <a href="https://apps.apple.com/" target="_blank" class="btn btn--primary btn--sm">Download</a>
+        <button class="navbar__toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav">
+    <div class="mobile-nav__links">
+      <a href="#overview" class="mobile-nav__link">Overview</a>
+
+      <a href="#gallery" class="mobile-nav__link">Gallery</a>
+      <a href="#how-it-works" class="mobile-nav__link">How It Works</a>
+
+      <a href="https://apps.apple.com/" target="_blank" class="btn btn--primary mobile-nav__link">Download App</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero section--dark">
+    <div class="hero__bg-glow"></div>
+    <div class="container reveal">
+      <div class="hero__content">
+        <h1>pH made simple.</h1>
+        <p class="hero__subtitle">pHinder makes chemistry click. Explore the pH scale, test with color-changing indicators, and compare real-world substances through hands-on virtual experiments.</p>
+        <div class="hero__actions">
+          <a href="https://apps.apple.com/" target="_blank" class="btn btn--primary">Download on the App Store</a>
+          <a href="#how-it-works" class="btn btn--secondary">See how it works</a>
+        </div>
+      </div>
+      
+      <!-- Hero iPhone Mockup -->
+      <div class="iphone-mockup">
+        <div class="iphone-mockup__notch"></div>
+        <div class="iphone-mockup__screen">
+          <img src="assets/screenshots/01-home.png" alt="pHinder Home Dashboard" onerror="handleImageError(this)">
+          <div class="iphone-mockup__placeholder">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <p>Dashboard</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="section section--light reveal">
+    <div class="container">
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+        <h2>What is pHinder?</h2>
+        <p>pHinder is an iOS app designed for students to learn about pH, explore how the scale works, test substances with different indicators, and compare real-world examples, all through simple, hands-on experiments.</p>
+      </div>
+      
+      <div class="overview__stats">
+        <div class="stat-item">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M10 2v6.2l-6.4 11.1C3.1 20.2 3.7 21.5 5 21.5h14c1.3 0 1.9-1.3 1.4-2.2L14 8.2V2h-4z"/></svg>
+          <h4>Color Indicators</h4>
+          <p>Watch indicators reveal acids and bases</p>
+        </div>
+        <div class="stat-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 6-6"/></svg>
+          <h4>Powers of 10</h4>
+          <p>See how pH changes on a logarithmic scale</p>
+        </div>
+        <div class="stat-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <h4>Real Examples</h4>
+          <p>Compare pH across everyday substances</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section section--dark gallery reveal">
+    <div class="container text-center" style="margin-bottom: 3rem;">
+      <h2>See pHinder in action.</h2>
+    </div>
+    
+    <div class="carousel">
+      <!-- Item 1 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/07-settings.png" alt="Onboarding" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>Onboarding</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">Onboarding</div>
+      </div>
+      <!-- Item 2 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/01-home.png" alt="Home Dashboard" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>Home Dashboard</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">Home Dashboard</div>
+      </div>
+      <!-- Item 3 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/02-new-reading.png" alt="Examples" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>Examples</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">Examples</div>
+      </div>
+      <!-- Item 4 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/03-history.png" alt="Experiment" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>Experiment</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">Experiment</div>
+      </div>
+      <!-- Item 5 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/04-scanner.png" alt="pH Scale" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>pH Scale</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">pH Scale</div>
+      </div>
+      <!-- Item 6 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/05-categories.png" alt="Logarithmic Scale" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>Logarithmic Scale</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">Logarithmic Scale</div>
+      </div>
+      <!-- Item 7 -->
+      <div class="carousel__item">
+        <div class="iphone-mockup">
+          <div class="iphone-mockup__notch"></div>
+          <div class="iphone-mockup__screen">
+            <img src="assets/screenshots/06-details.png" alt="ChemBot" onerror="handleImageError(this)">
+            <div class="iphone-mockup__placeholder"><p>ChemBot</p></div>
+          </div>
+        </div>
+        <div class="carousel__caption">ChemBot</div>
+      </div>
+    </div>
+    
+    <div class="carousel-nav">
+      <button class="carousel-nav__btn carousel-nav__btn--prev" aria-label="Previous screenshot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <div class="carousel-nav__dots">
+        <button class="carousel-nav__dot is-active" aria-label="Go to screenshot 1"></button>
+        <button class="carousel-nav__dot" aria-label="Go to screenshot 2"></button>
+        <button class="carousel-nav__dot" aria-label="Go to screenshot 3"></button>
+        <button class="carousel-nav__dot" aria-label="Go to screenshot 4"></button>
+        <button class="carousel-nav__dot" aria-label="Go to screenshot 5"></button>
+        <button class="carousel-nav__dot" aria-label="Go to screenshot 6"></button>
+        <button class="carousel-nav__dot" aria-label="Go to screenshot 7"></button>
+
+      </div>
+      <button class="carousel-nav__btn carousel-nav__btn--next" aria-label="Next screenshot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section section--light reveal">
+    <div class="container text-center">
+      <h2>How it works.</h2>
+      
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3>Explore the pH Scale</h3>
+          <p>See how pH works on a scale of powers of 10, from acidic to basic.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3>Pick an Indicator</h3>
+          <p>Choose an indicator like litmus or phenolphthalein and see how it detects acids and bases.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3>Run the Experiment</h3>
+          <p>Test a substance and watch the indicator change color to reveal its pH.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3>Compare & Learn</h3>
+          <p>Compare real-world examples like lemon juice and baking soda to build true intuition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why pHinder Section -->
+  <section class="section section--dark why-section reveal">
+    <div class="container">
+      <h2>From the classroom to the kitchen, pHinder turns pH into something you can see, test, and understand.</h2>
+      
+      <div class="why-stats">
+        <div class="why-stat">
+          <span class="why-stat__number">14</span>
+          <span class="why-stat__label">The pH Scale</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-stat__number">5</span>
+          <span class="why-stat__label">Color Indicators</span>
+        </div>
+        <div class="why-stat">
+          <span class="why-stat__number">∞</span>
+          <span class="why-stat__label">Substances to Explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Section -->
+  <section id="download" class="section cta-section reveal">
+    <div class="container">
+      <h2 style="color: var(--color-white);">Download pHinder today.</h2>
+      <p style="color: var(--color-gray-mid); margin-bottom: 2rem;">Start learning about pH levels.</p>
+      
+      <a href="https://apps.apple.com/" target="_blank" class="btn btn--primary">
+
+        Download on the App Store
+      </a>
+      
+      <div class="qr-placeholder">
+        Scan QR Code
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+
+            pH<span>inder</span>
+          </a>
+          <p>pH made simple. The all-in-one digital companion for recording and understanding pH levels.</p>
+        </div>
+        
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+          </ul>
+        </div>
+        
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4>Contact the Developer</h4>
+          <div class="footer__socials">
+            <a href="https://github.com/vipulclicks" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vipul-kumar-singh-03ab66294/" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:vipulgalgotias@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2026 pHinder. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
